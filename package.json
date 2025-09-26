@@ -1,0 +1,39 @@
+{
+  "name": "coolify-homelab",
+  "version": "1.0.0",
+  "description": "Coolify API client for homelab management",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "ts-node coolify-cli.ts",
+    "test-connection": "node quick-test.js",
+    "example": "ts-node example.ts",
+    "backup": "ts-node coolify-backup.ts",
+    "backup-download": "ts-node backup-downloader.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev coolify-cli.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "coolify",
+    "api",
+    "homelab",
+    "docker",
+    "deployment"
+  ],
+  "author": "Homelab Admin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.19.11",
+    "@types/readline-sync": "^1.4.4",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
